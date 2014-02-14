@@ -1,0 +1,6 @@
+#!/usr/bin/env ruby
+require_relative '../config/environment'
+
+reddit = RedditReader.new('http://www.reddit.com/.json')
+reddit.read!
+reddit.generate_html('my_html.html')
