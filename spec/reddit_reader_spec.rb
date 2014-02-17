@@ -56,6 +56,10 @@ describe 'RedditReader' do
     end
 
     it 'generates an html page containing all posts' do
+      use_vcr('reddit_posts') do
+        reddit_reader.read!
+      end
+      
       reddit_reader.generate_html('generated_html.html')
       file = File.read(File.expand_path('generated_html.html'))
       titles.each do |title|
