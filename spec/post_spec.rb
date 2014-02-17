@@ -58,7 +58,7 @@ describe 'Post' do
     end
 
     it 'contains the url' do
-      expect(html).to match(/#{post_attributes[:url]}/)
+      expect(html).to match(/href="#{post_attributes[:url]}"/)
     end
 
     it 'contains the title' do
@@ -78,7 +78,7 @@ describe 'Post' do
     end
 
     it 'contains the image url' do
-      expect(html).to match(/#{post_attributes[:image_url]}/)
+      expect(html).to match(/<img src="#{post_attributes[:image_url]}" \/>/)
     end
   end
 end
