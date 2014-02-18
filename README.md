@@ -83,6 +83,8 @@ gems! Otherwise, you will get errors about JSON and RestClient.) All your code w
 be placed in two Ruby classes, but playing with the hash in irb is a useful tool when
 getting to know a complex data structure.
 
+You will have two classes, `RedditReader` and `Post`. The `RedditReader` class should be responsible for parsing the JSON response from Reddit, and the `Post` class will contain the data for each post. Follow along with the specs, and you will be guided to write the necessary methods.
+
 We want to generate an HTML page that excludes all posts that are NSFW (not safe for work).
 This is indicated by the `over_18` field.
 
