@@ -80,7 +80,7 @@ A hash of stories from the Reddit front page can now be retrieved using the foll
 Retrieve the Reddit hash in a `pry` or `irb` session and play with it interactively.
 (If you play around with it in irb, make sure to `require` the `json` and `rest_client`
 gems! Otherwise, you will get errors about JSON and RestClient.) All your code will
-be placed in a Ruby script, but playing with the hash in irb is a useful tool when
+be placed in two Ruby classes, but playing with the hash in irb is a useful tool when
 getting to know a complex data structure.
 
 We want to generate an HTML page that excludes all posts that are NSFW (not safe for work).
