@@ -2,40 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://reddit.com/.json
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept:
-      - "*/*; q=0.5, application/xml"
-      Accept-Encoding:
-      - gzip, deflate
-      User-Agent:
-      - Ruby
-  response:
-    status:
-      code: 302
-      message: Moved Temporarily
-    headers:
-      Server:
-      - AkamaiGHost
-      Content-Length:
-      - '0'
-      Location:
-      - http://www.reddit.com/.json
-      Date:
-      - Fri, 31 Jan 2014 18:50:36 GMT
-      Connection:
-      - keep-alive
-    body:
-      encoding: UTF-8
-      string: ''
-    http_version: 
-  recorded_at: Fri, 31 Jan 2014 18:50:36 GMT
-- request:
-    method: get
-    uri: http://www.reddit.com/.json
+    uri: http://www.reddit.com/r/technology/.json
     body:
       encoding: US-ASCII
       string: ''
@@ -63,221 +30,349 @@ http_interactions:
       - "*"
       Vary:
       - accept-encoding
-      Content-Encoding:
-      - gzip
       Content-Length:
-      - '9080'
+      - '26525'
       Server:
       - "'; DROP TABLE servertypes; --"
       Date:
-      - Fri, 31 Jan 2014 18:50:36 GMT
+      - Tue, 18 Feb 2014 22:13:39 GMT
       Connection:
       - keep-alive
     body:
       encoding: ASCII-8BIT
-      string: !binary |-
-        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
+      string: "{\"kind\": \"Listing\", \"data\": {\"modhash\": \"\", \"children\":
+        [{\"kind\": \"t3\", \"data\": {\"domain\": \"gigaom.com\", \"banned_by\":
+        null, \"media_embed\": {}, \"subreddit\": \"technology\", \"selftext_html\":
+        null, \"selftext\": \"\", \"likes\": null, \"secure_media\": null, \"link_flair_text\":
+        null, \"id\": \"1y96o0\", \"secure_media_embed\": {}, \"clicked\": false,
+        \"stickied\": false, \"author\": \"goodthingstolife\", \"media\": null, \"score\":
+        2031, \"approved_by\": null, \"over_18\": false, \"hidden\": false, \"thumbnail\":
+        \"\", \"subreddit_id\": \"t5_2qh16\", \"edited\": false, \"link_flair_css_class\":
+        null, \"author_flair_css_class\": null, \"downs\": 1350, \"saved\": false,
+        \"is_self\": false, \"permalink\": \"/r/technology/comments/1y96o0/seventh_grader_builds_a_braille_printer_with_350/\",
+        \"name\": \"t3_1y96o0\", \"created\": 1392771993.0, \"url\": \"http://gigaom.com/2014/02/17/seventh-grader-builds-a-braille-printer-with-350-worth-of-legos/\",
+        \"author_flair_text\": null, \"title\": \"Seventh grader builds a braille
+        printer with $350 worth of Legos\", \"created_utc\": 1392743193.0, \"ups\":
+        3381, \"num_comments\": 297, \"visited\": false, \"num_reports\": null, \"distinguished\":
+        null}}, {\"kind\": \"t3\", \"data\": {\"domain\": \"engadget.com\", \"banned_by\":
+        null, \"media_embed\": {}, \"subreddit\": \"technology\", \"selftext_html\":
+        null, \"selftext\": \"\", \"likes\": null, \"secure_media\": null, \"link_flair_text\":
+        null, \"id\": \"1y9o8c\", \"secure_media_embed\": {}, \"clicked\": false,
+        \"stickied\": false, \"author\": \"jbkly\", \"media\": null, \"score\": 654,
+        \"approved_by\": null, \"over_18\": false, \"hidden\": false, \"thumbnail\":
+        \"\", \"subreddit_id\": \"t5_2qh16\", \"edited\": false, \"link_flair_css_class\":
+        null, \"author_flair_css_class\": null, \"downs\": 153, \"saved\": false,
+        \"is_self\": false, \"permalink\": \"/r/technology/comments/1y9o8c/engadget_asks_do_you_really_need_a_4k_smartphone/\",
+        \"name\": \"t3_1y9o8c\", \"created\": 1392781357.0, \"url\": \"http://www.engadget.com/2014/02/18/do-you-really-need-a-4k-smartphone-screen/\",
+        \"author_flair_text\": null, \"title\": \"Engadget asks: \\\"Do you really
+        need a 4K smartphone screen?\\\" I'd rather have a 4000mAh battery first.
+        What do you think?\", \"created_utc\": 1392752557.0, \"ups\": 807, \"num_comments\":
+        136, \"visited\": false, \"num_reports\": null, \"distinguished\": null}},
+        {\"kind\": \"t3\", \"data\": {\"domain\": \"neowin.net\", \"banned_by\": null,
+        \"media_embed\": {}, \"subreddit\": \"technology\", \"selftext_html\": null,
+        \"selftext\": \"\", \"likes\": null, \"secure_media\": null, \"link_flair_text\":
+        null, \"id\": \"1y88tf\", \"secure_media_embed\": {}, \"clicked\": false,
+        \"stickied\": false, \"author\": \"stevenjohns\", \"media\": null, \"score\":
+        2735, \"approved_by\": null, \"over_18\": false, \"hidden\": false, \"thumbnail\":
+        \"\", \"subreddit_id\": \"t5_2qh16\", \"edited\": false, \"link_flair_css_class\":
+        null, \"author_flair_css_class\": null, \"downs\": 3552, \"saved\": false,
+        \"is_self\": false, \"permalink\": \"/r/technology/comments/1y88tf/windows_8_ux_designer_on_metro_it_is_the/\",
+        \"name\": \"t3_1y88tf\", \"created\": 1392715454.0, \"url\": \"http://www.neowin.net/news/windows-8-ux-designer-on-metro-it-is-the-antithesis-of-a-power-user\",
+        \"author_flair_text\": null, \"title\": \"Windows 8 UX designer on Metro:
+        \\\"It is the antithesis of a power user\\\"\", \"created_utc\": 1392715454.0,
+        \"ups\": 6287, \"num_comments\": 3807, \"visited\": false, \"num_reports\":
+        null, \"distinguished\": null}}, {\"kind\": \"t3\", \"data\": {\"domain\":
+        \"bgr.com\", \"banned_by\": null, \"media_embed\": {}, \"subreddit\": \"technology\",
+        \"selftext_html\": null, \"selftext\": \"\", \"likes\": null, \"secure_media\":
+        null, \"link_flair_text\": null, \"id\": \"1y8ua6\", \"secure_media_embed\":
+        {}, \"clicked\": false, \"stickied\": false, \"author\": \"PolkyPolk\", \"media\":
+        null, \"score\": 920, \"approved_by\": null, \"over_18\": false, \"hidden\":
+        false, \"thumbnail\": \"\", \"subreddit_id\": \"t5_2qh16\", \"edited\": false,
+        \"link_flair_css_class\": null, \"author_flair_css_class\": null, \"downs\":
+        350, \"saved\": false, \"is_self\": false, \"permalink\": \"/r/technology/comments/1y8ua6/new_service_from_htc_will_replace_your_cracked/\",
+        \"name\": \"t3_1y8ua6\", \"created\": 1392764600.0, \"url\": \"http://bgr.com/2014/02/18/htc-cracked-screen-replacement-free-htc-advantage/\",
+        \"author_flair_text\": null, \"title\": \"New service from HTC will replace
+        your cracked smartphone screen for free\", \"created_utc\": 1392735800.0,
+        \"ups\": 1270, \"num_comments\": 113, \"visited\": false, \"num_reports\":
+        null, \"distinguished\": null}}, {\"kind\": \"t3\", \"data\": {\"domain\":
+        \"pando.com\", \"banned_by\": null, \"media_embed\": {}, \"subreddit\": \"technology\",
+        \"selftext_html\": null, \"selftext\": \"\", \"likes\": null, \"secure_media\":
+        null, \"link_flair_text\": null, \"id\": \"1y94cr\", \"secure_media_embed\":
+        {}, \"clicked\": false, \"stickied\": false, \"author\": \"raingamers\", \"media\":
+        null, \"score\": 190, \"approved_by\": null, \"over_18\": false, \"hidden\":
+        false, \"thumbnail\": \"\", \"subreddit_id\": \"t5_2qh16\", \"edited\": false,
+        \"link_flair_css_class\": null, \"author_flair_css_class\": null, \"downs\":
+        73, \"saved\": false, \"is_self\": false, \"permalink\": \"/r/technology/comments/1y94cr/duolingo_raises_20m_in_a_quest_to_grab_language/\",
+        \"name\": \"t3_1y94cr\", \"created\": 1392770662.0, \"url\": \"http://pando.com/2014/02/18/duolingo-raises-20m-plans-to-grab-language-learning-by-the-balls/\",
+        \"author_flair_text\": null, \"title\": \"Duolingo raises $20M in a quest
+        to grab language learning by the balls\", \"created_utc\": 1392741862.0, \"ups\":
+        263, \"num_comments\": 16, \"visited\": false, \"num_reports\": null, \"distinguished\":
+        null}}, {\"kind\": \"t3\", \"data\": {\"domain\": \"news.yahoo.com\", \"banned_by\":
+        null, \"media_embed\": {}, \"subreddit\": \"technology\", \"selftext_html\":
+        null, \"selftext\": \"\", \"likes\": null, \"secure_media\": null, \"link_flair_text\":
+        null, \"id\": \"1y8sl0\", \"secure_media_embed\": {}, \"clicked\": false,
+        \"stickied\": false, \"author\": \"ibcunning2\", \"media\": null, \"score\":
+        185, \"approved_by\": null, \"over_18\": false, \"hidden\": false, \"thumbnail\":
+        \"\", \"subreddit_id\": \"t5_2qh16\", \"edited\": false, \"link_flair_css_class\":
+        null, \"author_flair_css_class\": null, \"downs\": 76, \"saved\": false, \"is_self\":
+        false, \"permalink\": \"/r/technology/comments/1y8sl0/us_navy_ready_to_deploy_laser_for_1st_time/\",
+        \"name\": \"t3_1y8sl0\", \"created\": 1392763477.0, \"url\": \"http://news.yahoo.com/us-navy-ready-deploy-laser-1st-time-183857955.html\",
+        \"author_flair_text\": null, \"title\": \"US Navy ready to deploy laser for
+        1st time\", \"created_utc\": 1392734677.0, \"ups\": 261, \"num_comments\":
+        104, \"visited\": false, \"num_reports\": null, \"distinguished\": null}},
+        {\"kind\": \"t3\", \"data\": {\"domain\": \"thenextweb.com\", \"banned_by\":
+        null, \"media_embed\": {}, \"subreddit\": \"technology\", \"selftext_html\":
+        null, \"selftext\": \"\", \"likes\": null, \"secure_media\": null, \"link_flair_text\":
+        null, \"id\": \"1y9gwt\", \"secure_media_embed\": {}, \"clicked\": false,
+        \"stickied\": false, \"author\": \"akumanara\", \"media\": null, \"score\":
+        39, \"approved_by\": null, \"over_18\": false, \"hidden\": false, \"thumbnail\":
+        \"\", \"subreddit_id\": \"t5_2qh16\", \"edited\": false, \"link_flair_css_class\":
+        null, \"author_flair_css_class\": null, \"downs\": 27, \"saved\": false, \"is_self\":
+        false, \"permalink\": \"/r/technology/comments/1y9gwt/bored_at_your_desk_kill_a_few_minutes_by_feeding/\",
+        \"name\": \"t3_1y9gwt\", \"created\": 1392777536.0, \"url\": \"http://thenextweb.com/shareables/2014/02/18/bored-desk-kill-minutes-feeding-real-fish-via-web-app/\",
+        \"author_flair_text\": null, \"title\": \"Bored at your desk? Kill a few minutes
+        by feeding some real fish via this Web app\", \"created_utc\": 1392748736.0,
+        \"ups\": 66, \"num_comments\": 12, \"visited\": false, \"num_reports\": null,
+        \"distinguished\": null}}, {\"kind\": \"t3\", \"data\": {\"domain\": \"anandtech.com\",
+        \"banned_by\": null, \"media_embed\": {}, \"subreddit\": \"technology\", \"selftext_html\":
+        null, \"selftext\": \"\", \"likes\": null, \"secure_media\": null, \"link_flair_text\":
+        null, \"id\": \"1y94df\", \"secure_media_embed\": {}, \"clicked\": false,
+        \"stickied\": false, \"author\": \"ChrisOfAllTrades\", \"media\": null, \"score\":
+        52, \"approved_by\": null, \"over_18\": false, \"hidden\": false, \"thumbnail\":
+        \"\", \"subreddit_id\": \"t5_2qh16\", \"edited\": false, \"link_flair_css_class\":
+        null, \"author_flair_css_class\": null, \"downs\": 28, \"saved\": false, \"is_self\":
+        false, \"permalink\": \"/r/technology/comments/1y94df/anandtech_the_nvidia_geforce_gtx_750_ti_and_gtx/\",
+        \"name\": \"t3_1y94df\", \"created\": 1392770672.0, \"url\": \"http://www.anandtech.com/show/7764/the-nvidia-geforce-gtx-750-ti-and-gtx-750-review-maxwell\",
+        \"author_flair_text\": null, \"title\": \"AnandTech | The NVIDIA GeForce GTX
+        750 Ti and GTX 750 Review: Maxwell Makes Its Move\", \"created_utc\": 1392741872.0,
+        \"ups\": 80, \"num_comments\": 7, \"visited\": false, \"num_reports\": null,
+        \"distinguished\": null}}, {\"kind\": \"t3\", \"data\": {\"domain\": \"singularityhub.com\",
+        \"banned_by\": null, \"media_embed\": {}, \"subreddit\": \"technology\", \"selftext_html\":
+        null, \"selftext\": \"\", \"likes\": null, \"secure_media\": null, \"link_flair_text\":
+        null, \"id\": \"1y92lf\", \"secure_media_embed\": {}, \"clicked\": false,
+        \"stickied\": false, \"author\": \"mattburgess\", \"media\": null, \"score\":
+        35, \"approved_by\": null, \"over_18\": false, \"hidden\": false, \"thumbnail\":
+        \"\", \"subreddit_id\": \"t5_2qh16\", \"edited\": false, \"link_flair_css_class\":
+        null, \"author_flair_css_class\": null, \"downs\": 23, \"saved\": false, \"is_self\":
+        false, \"permalink\": \"/r/technology/comments/1y92lf/there_are_7_billion_mobile_devices_on_earth/\",
+        \"name\": \"t3_1y92lf\", \"created\": 1392769680.0, \"url\": \"http://singularityhub.com/2014/02/18/there-are-7-billion-mobile-devices-on-earth-almost-one-for-each-person/\",
+        \"author_flair_text\": null, \"title\": \"There Are 7 Billion Mobile Devices
+        On Earth, Almost One For Each Person\", \"created_utc\": 1392740880.0, \"ups\":
+        58, \"num_comments\": 8, \"visited\": false, \"num_reports\": null, \"distinguished\":
+        null}}, {\"kind\": \"t3\", \"data\": {\"domain\": \"zdnet.com\", \"banned_by\":
+        null, \"media_embed\": {}, \"subreddit\": \"technology\", \"selftext_html\":
+        null, \"selftext\": \"\", \"likes\": null, \"secure_media\": null, \"link_flair_text\":
+        null, \"id\": \"1y8uqq\", \"secure_media_embed\": {}, \"clicked\": false,
+        \"stickied\": false, \"author\": \"Libertatea\", \"media\": null, \"score\":
+        40, \"approved_by\": null, \"over_18\": false, \"hidden\": false, \"thumbnail\":
+        \"\", \"subreddit_id\": \"t5_2qh16\", \"edited\": false, \"link_flair_css_class\":
+        null, \"author_flair_css_class\": null, \"downs\": 29, \"saved\": false, \"is_self\":
+        false, \"permalink\": \"/r/technology/comments/1y8uqq/lobby_pushing_for_australian_piracy_crackdown/\",
+        \"name\": \"t3_1y8uqq\", \"created\": 1392764958.0, \"url\": \"http://www.zdnet.com/au/lobby-pushing-for-australian-piracy-crackdown-donates-millions-7000026421/\",
+        \"author_flair_text\": null, \"title\": \"Lobby pushing for Australian piracy
+        crackdown donates millions\", \"created_utc\": 1392736158.0, \"ups\": 69,
+        \"num_comments\": 6, \"visited\": false, \"num_reports\": null, \"distinguished\":
+        null}}, {\"kind\": \"t3\", \"data\": {\"domain\": \"news.cnet.com\", \"banned_by\":
+        null, \"media_embed\": {}, \"subreddit\": \"technology\", \"selftext_html\":
+        null, \"selftext\": \"\", \"likes\": null, \"secure_media\": null, \"link_flair_text\":
+        null, \"id\": \"1y8puc\", \"secure_media_embed\": {}, \"clicked\": false,
+        \"stickied\": false, \"author\": \"Rob768\", \"media\": null, \"score\": 50,
+        \"approved_by\": null, \"over_18\": false, \"hidden\": false, \"thumbnail\":
+        \"\", \"subreddit_id\": \"t5_2qh16\", \"edited\": false, \"link_flair_css_class\":
+        null, \"author_flair_css_class\": null, \"downs\": 38, \"saved\": false, \"is_self\":
+        false, \"permalink\": \"/r/technology/comments/1y8puc/nvidias_launches_midrange_gpus_with_maxwell/\",
+        \"name\": \"t3_1y8puc\", \"created\": 1392761520.0, \"url\": \"http://news.cnet.com/8301-1001_3-57618952-92/nvidias-launches-mid-range-gpus-with-maxwell-architecture/\",
+        \"author_flair_text\": null, \"title\": \"Nvidia's launches mid-range GPUs
+        with Maxwell architecture | Business Tech\", \"created_utc\": 1392732720.0,
+        \"ups\": 88, \"num_comments\": 22, \"visited\": false, \"num_reports\": null,
+        \"distinguished\": null}}, {\"kind\": \"t3\", \"data\": {\"domain\": \"3dprint.com\",
+        \"banned_by\": null, \"media_embed\": {}, \"subreddit\": \"technology\", \"selftext_html\":
+        null, \"selftext\": \"\", \"likes\": null, \"secure_media\": null, \"link_flair_text\":
+        null, \"id\": \"1y8zh7\", \"secure_media_embed\": {}, \"clicked\": false,
+        \"stickied\": false, \"author\": \"Rob768\", \"media\": null, \"score\": 30,
+        \"approved_by\": null, \"over_18\": false, \"hidden\": false, \"thumbnail\":
+        \"\", \"subreddit_id\": \"t5_2qh16\", \"edited\": false, \"link_flair_css_class\":
+        null, \"author_flair_css_class\": null, \"downs\": 14, \"saved\": false, \"is_self\":
+        false, \"permalink\": \"/r/technology/comments/1y8zh7/first_robotic_exoskeleton_enables_woman_to_walk/\",
+        \"name\": \"t3_1y8zh7\", \"created\": 1392767904.0, \"url\": \"http://3dprint.com/1113/3d-systems-prints-first-robotic-exoskeleton-enables-woman-to-walk-again/\",
+        \"author_flair_text\": null, \"title\": \"First Robotic Exoskeleton, Enables
+        Woman to Walk Again, 3D Printed\", \"created_utc\": 1392739104.0, \"ups\":
+        44, \"num_comments\": 4, \"visited\": false, \"num_reports\": null, \"distinguished\":
+        null}}, {\"kind\": \"t3\", \"data\": {\"domain\": \"wired.com\", \"banned_by\":
+        null, \"media_embed\": {}, \"subreddit\": \"technology\", \"selftext_html\":
+        null, \"selftext\": \"\", \"likes\": null, \"secure_media\": null, \"link_flair_text\":
+        null, \"id\": \"1y8gb8\", \"secure_media_embed\": {}, \"clicked\": false,
+        \"stickied\": false, \"author\": \"iamondemand\", \"media\": null, \"score\":
+        62, \"approved_by\": null, \"over_18\": false, \"hidden\": false, \"thumbnail\":
+        \"\", \"subreddit_id\": \"t5_2qh16\", \"edited\": false, \"link_flair_css_class\":
+        null, \"author_flair_css_class\": null, \"downs\": 40, \"saved\": false, \"is_self\":
+        false, \"permalink\": \"/r/technology/comments/1y8gb8/netflix_is_building_an_artificial_brain_using/\",
+        \"name\": \"t3_1y8gb8\", \"created\": 1392752529.0, \"url\": \"http://www.wired.com/wiredenterprise/2014/02/netflix-deep-learning/\",
+        \"author_flair_text\": null, \"title\": \"Netflix Is Building an Artificial
+        Brain Using Amazon's Cloud | Wired Enterprise\", \"created_utc\": 1392723729.0,
+        \"ups\": 102, \"num_comments\": 12, \"visited\": false, \"num_reports\": null,
+        \"distinguished\": null}}, {\"kind\": \"t3\", \"data\": {\"domain\": \"wired.com\",
+        \"banned_by\": null, \"media_embed\": {}, \"subreddit\": \"technology\", \"selftext_html\":
+        null, \"selftext\": \"\", \"likes\": null, \"secure_media\": null, \"link_flair_text\":
+        null, \"id\": \"1y991a\", \"secure_media_embed\": {}, \"clicked\": false,
+        \"stickied\": false, \"author\": \"Martin81\", \"media\": null, \"score\":
+        19, \"approved_by\": null, \"over_18\": false, \"hidden\": false, \"thumbnail\":
+        \"\", \"subreddit_id\": \"t5_2qh16\", \"edited\": false, \"link_flair_css_class\":
+        null, \"author_flair_css_class\": null, \"downs\": 9, \"saved\": false, \"is_self\":
+        false, \"permalink\": \"/r/technology/comments/1y991a/the_drone_that_will_sail_itself_around_the_world/\",
+        \"name\": \"t3_1y991a\", \"created\": 1392773305.0, \"url\": \"http://www.wired.com/autopia/2014/02/saildrone\",
+        \"author_flair_text\": null, \"title\": \"The Drone That Will Sail Itself
+        Around the World\", \"created_utc\": 1392744505.0, \"ups\": 28, \"num_comments\":
+        0, \"visited\": false, \"num_reports\": null, \"distinguished\": null}}, {\"kind\":
+        \"t3\", \"data\": {\"domain\": \"forbes.com\", \"banned_by\": null, \"media_embed\":
+        {}, \"subreddit\": \"technology\", \"selftext_html\": null, \"selftext\":
+        \"\", \"likes\": null, \"secure_media\": null, \"link_flair_text\": null,
+        \"id\": \"1y95sb\", \"secure_media_embed\": {}, \"clicked\": false, \"stickied\":
+        false, \"author\": \"runnerdood\", \"media\": null, \"score\": 20, \"approved_by\":
+        null, \"over_18\": false, \"hidden\": false, \"thumbnail\": \"\", \"subreddit_id\":
+        \"t5_2qh16\", \"edited\": false, \"link_flair_css_class\": null, \"author_flair_css_class\":
+        null, \"downs\": 14, \"saved\": false, \"is_self\": false, \"permalink\":
+        \"/r/technology/comments/1y95sb/egg_replacing_startup_hampton_creek_foods_raises/\",
+        \"name\": \"t3_1y95sb\", \"created\": 1392771482.0, \"url\": \"http://www.forbes.com/sites/ryanmac/2014/02/17/egg-replacing-startup-hampton-creek-foods-raises-23-million-from-asias-richest-man-and-yahoo-cofounder-jerry-yang/\",
+        \"author_flair_text\": null, \"title\": \"Egg Replacing Startup Hampton Creek
+        Foods Raises $23 Million From Asia's Richest Man: \\\"The investment brings
+        the San Francisco-based food technology startup\\u2019s total backing to just
+        under $30 million\\\"\", \"created_utc\": 1392742682.0, \"ups\": 34, \"num_comments\":
+        4, \"visited\": false, \"num_reports\": null, \"distinguished\": null}}, {\"kind\":
+        \"t3\", \"data\": {\"domain\": \"seroundtable.com\", \"banned_by\": null,
+        \"media_embed\": {}, \"subreddit\": \"technology\", \"selftext_html\": null,
+        \"selftext\": \"\", \"likes\": null, \"secure_media\": null, \"link_flair_text\":
+        null, \"id\": \"1y8m53\", \"secure_media_embed\": {}, \"clicked\": false,
+        \"stickied\": false, \"author\": \"SaleemPheku\", \"media\": null, \"score\":
+        36, \"approved_by\": null, \"over_18\": false, \"hidden\": false, \"thumbnail\":
+        \"\", \"subreddit_id\": \"t5_2qh16\", \"edited\": false, \"link_flair_css_class\":
+        null, \"author_flair_css_class\": null, \"downs\": 33, \"saved\": false, \"is_self\":
+        false, \"permalink\": \"/r/technology/comments/1y8m53/google_glass_releases_a_list_of_dos_donts/\",
+        \"name\": \"t3_1y8m53\", \"created\": 1392758464.0, \"url\": \"http://www.seroundtable.com/google-do-dont-18126.html\",
+        \"author_flair_text\": null, \"title\": \"Google Glass Releases A List Of
+        Do's &amp; Don't's\", \"created_utc\": 1392729664.0, \"ups\": 69, \"num_comments\":
+        32, \"visited\": false, \"num_reports\": null, \"distinguished\": null}},
+        {\"kind\": \"t3\", \"data\": {\"domain\": \"omaha.com\", \"banned_by\": null,
+        \"media_embed\": {}, \"subreddit\": \"technology\", \"selftext_html\": null,
+        \"selftext\": \"\", \"likes\": null, \"secure_media\": null, \"link_flair_text\":
+        null, \"id\": \"1y8pni\", \"secure_media_embed\": {}, \"clicked\": false,
+        \"stickied\": false, \"author\": \"morimoto3000\", \"media\": null, \"score\":
+        29, \"approved_by\": null, \"over_18\": false, \"hidden\": false, \"thumbnail\":
+        \"\", \"subreddit_id\": \"t5_2qh16\", \"edited\": false, \"link_flair_css_class\":
+        null, \"author_flair_css_class\": null, \"downs\": 17, \"saved\": false, \"is_self\":
+        false, \"permalink\": \"/r/technology/comments/1y8pni/with_3d_printer_creighton_prof_creates_affordable/\",
+        \"name\": \"t3_1y8pni\", \"created\": 1392761385.0, \"url\": \"http://www.omaha.com/article/20140218/LIVEWELL01/140218806/1685#with-3-d-printer-creighton-prof-creates-affordable-hands-for-kids\",
+        \"author_flair_text\": null, \"title\": \"With 3-D printer, Creighton prof
+        creates affordable hands for kids\", \"created_utc\": 1392732585.0, \"ups\":
+        46, \"num_comments\": 1, \"visited\": false, \"num_reports\": null, \"distinguished\":
+        null}}, {\"kind\": \"t3\", \"data\": {\"domain\": \"news.nationalpost.com\",
+        \"banned_by\": null, \"media_embed\": {}, \"subreddit\": \"technology\", \"selftext_html\":
+        null, \"selftext\": \"\", \"likes\": null, \"secure_media\": null, \"link_flair_text\":
+        null, \"id\": \"1y92j4\", \"secure_media_embed\": {}, \"clicked\": false,
+        \"stickied\": false, \"author\": \"nimobo\", \"media\": null, \"score\": 16,
+        \"approved_by\": null, \"over_18\": false, \"hidden\": false, \"thumbnail\":
+        \"\", \"subreddit_id\": \"t5_2qh16\", \"edited\": false, \"link_flair_css_class\":
+        null, \"author_flair_css_class\": null, \"downs\": 9, \"saved\": false, \"is_self\":
+        false, \"permalink\": \"/r/technology/comments/1y92j4/us_navy_to_deploy_star_warslike_laser_system_this/\",
+        \"name\": \"t3_1y92j4\", \"created\": 1392769642.0, \"url\": \"http://news.nationalpost.com/2014/02/17/u-s-navy-to-deploy-star-wars-like-laser-system-this-summer-electromagnetic-rail-guns-not-far-behind/\",
+        \"author_flair_text\": null, \"title\": \"U.S. Navy to deploy \\u2018Star
+        Wars\\u2019-like laser system this summer; electromagnetic rail guns not far
+        behind\", \"created_utc\": 1392740842.0, \"ups\": 25, \"num_comments\": 0,
+        \"visited\": false, \"num_reports\": null, \"distinguished\": null}}, {\"kind\":
+        \"t3\", \"data\": {\"domain\": \"net-security.org\", \"banned_by\": null,
+        \"media_embed\": {}, \"subreddit\": \"technology\", \"selftext_html\": null,
+        \"selftext\": \"\", \"likes\": null, \"secure_media\": null, \"link_flair_text\":
+        null, \"id\": \"1y8qx3\", \"secure_media_embed\": {}, \"clicked\": false,
+        \"stickied\": false, \"author\": \"tekz\", \"media\": null, \"score\": 23,
+        \"approved_by\": null, \"over_18\": false, \"hidden\": false, \"thumbnail\":
+        \"\", \"subreddit_id\": \"t5_2qh16\", \"edited\": false, \"link_flair_css_class\":
+        null, \"author_flair_css_class\": null, \"downs\": 12, \"saved\": false, \"is_self\":
+        false, \"permalink\": \"/r/technology/comments/1y8qx3/half_a_million_belkin_wemo_users_are_wide_open_to/\",
+        \"name\": \"t3_1y8qx3\", \"created\": 1392762291.0, \"url\": \"http://www.net-security.org/secworld.php?id=16374\",
+        \"author_flair_text\": null, \"title\": \"Half a million Belkin WeMo users
+        are wide open to attackers\", \"created_utc\": 1392733491.0, \"ups\": 35,
+        \"num_comments\": 0, \"visited\": false, \"num_reports\": null, \"distinguished\":
+        null}}, {\"kind\": \"t3\", \"data\": {\"domain\": \"matthaeuskrenn.com\",
+        \"banned_by\": null, \"media_embed\": {}, \"subreddit\": \"technology\", \"selftext_html\":
+        null, \"selftext\": \"\", \"likes\": null, \"secure_media\": null, \"link_flair_text\":
+        null, \"id\": \"1y9wmz\", \"secure_media_embed\": {}, \"clicked\": false,
+        \"stickied\": false, \"author\": \"asarazan\", \"media\": null, \"score\":
+        9, \"approved_by\": null, \"over_18\": false, \"hidden\": false, \"thumbnail\":
+        \"\", \"subreddit_id\": \"t5_2qh16\", \"edited\": false, \"link_flair_css_class\":
+        null, \"author_flair_css_class\": null, \"downs\": 3, \"saved\": false, \"is_self\":
+        false, \"permalink\": \"/r/technology/comments/1y9wmz/a_new_car_ui_matthaeus_krenn/\",
+        \"name\": \"t3_1y9wmz\", \"created\": 1392785762.0, \"url\": \"http://matthaeuskrenn.com/new-car-ui\",
+        \"author_flair_text\": null, \"title\": \"A New Car UI - Matthaeus Krenn\",
+        \"created_utc\": 1392756962.0, \"ups\": 12, \"num_comments\": 5, \"visited\":
+        false, \"num_reports\": null, \"distinguished\": null}}, {\"kind\": \"t3\",
+        \"data\": {\"domain\": \"wired.com\", \"banned_by\": null, \"media_embed\":
+        {}, \"subreddit\": \"technology\", \"selftext_html\": null, \"selftext\":
+        \"\", \"likes\": null, \"secure_media\": null, \"link_flair_text\": null,
+        \"id\": \"1y93pk\", \"secure_media_embed\": {}, \"clicked\": false, \"stickied\":
+        false, \"author\": \"hrtattx\", \"media\": null, \"score\": 15, \"approved_by\":
+        null, \"over_18\": true, \"hidden\": false, \"thumbnail\": \"\", \"subreddit_id\":
+        \"t5_2qh16\", \"edited\": false, \"link_flair_css_class\": null, \"author_flair_css_class\":
+        null, \"downs\": 18, \"saved\": false, \"is_self\": false, \"permalink\":
+        \"/r/technology/comments/1y93pk/this_syringe_filled_with_hightech_mini_sponges/\",
+        \"name\": \"t3_1y93pk\", \"created\": 1392770316.0, \"url\": \"http://www.wired.com/design/2014/02/seal-bullet-wound-q-tips/\",
+        \"author_flair_text\": null, \"title\": \"This syringe filled with high-tech
+        mini sponges can seal a bullet wound in seconds\", \"created_utc\": 1392741516.0,
+        \"ups\": 33, \"num_comments\": 0, \"visited\": false, \"num_reports\": null,
+        \"distinguished\": null}}, {\"kind\": \"t3\", \"data\": {\"domain\": \"osa.org\",
+        \"banned_by\": null, \"media_embed\": {}, \"subreddit\": \"technology\", \"selftext_html\":
+        null, \"selftext\": \"\", \"likes\": null, \"secure_media\": null, \"link_flair_text\":
+        null, \"id\": \"1y95pv\", \"secure_media_embed\": {}, \"clicked\": false,
+        \"stickied\": false, \"author\": \"TheSecondAsFarce\", \"media\": null, \"score\":
+        14, \"approved_by\": null, \"over_18\": false, \"hidden\": false, \"thumbnail\":
+        \"\", \"subreddit_id\": \"t5_2qh16\", \"edited\": false, \"link_flair_css_class\":
+        null, \"author_flair_css_class\": null, \"downs\": 11, \"saved\": false, \"is_self\":
+        false, \"permalink\": \"/r/technology/comments/1y95pv/a_stretchable_highway_for_light_a_team_of_belgian/\",
+        \"name\": \"t3_1y95pv\", \"created\": 1392771444.0, \"url\": \"http://www.osa.org/en-us/about_osa/newsroom/newsreleases/2014/a_stretchable_highway_for_light/\",
+        \"author_flair_text\": null, \"title\": \"A Stretchable Highway for Light:
+        A team of Belgian researchers reports progress on what may be the first optical
+        circuit that uses interconnections that are not only bendable, but also stretchable\",
+        \"created_utc\": 1392742644.0, \"ups\": 25, \"num_comments\": 0, \"visited\":
+        false, \"num_reports\": null, \"distinguished\": null}}, {\"kind\": \"t3\",
+        \"data\": {\"domain\": \"economist.com\", \"banned_by\": null, \"media_embed\":
+        {}, \"subreddit\": \"technology\", \"selftext_html\": null, \"selftext\":
+        \"\", \"likes\": null, \"secure_media\": null, \"link_flair_text\": null,
+        \"id\": \"1y7pr9\", \"secure_media_embed\": {}, \"clicked\": false, \"stickied\":
+        false, \"author\": \"Dongbeihu\", \"media\": null, \"score\": 128, \"approved_by\":
+        null, \"over_18\": false, \"hidden\": false, \"thumbnail\": \"\", \"subreddit_id\":
+        \"t5_2qh16\", \"edited\": false, \"link_flair_css_class\": null, \"author_flair_css_class\":
+        null, \"downs\": 73, \"saved\": false, \"is_self\": false, \"permalink\":
+        \"/r/technology/comments/1y7pr9/icarus_space_mission_to_test_if_animals_can/\",
+        \"name\": \"t3_1y7pr9\", \"created\": 1392727619.0, \"url\": \"http://www.economist.com/blogs/babbage/2014/02/seismology\",
+        \"author_flair_text\": null, \"title\": \"ICARUS space mission to test if
+        animals can predict earthquakes\", \"created_utc\": 1392698819.0, \"ups\":
+        201, \"num_comments\": 8, \"visited\": false, \"num_reports\": null, \"distinguished\":
+        null}}, {\"kind\": \"t3\", \"data\": {\"domain\": \"hwbot.org\", \"banned_by\":
+        null, \"media_embed\": {}, \"subreddit\": \"technology\", \"selftext_html\":
+        null, \"selftext\": \"\", \"likes\": null, \"secure_media\": null, \"link_flair_text\":
+        null, \"id\": \"1y7gfk\", \"secure_media_embed\": {}, \"clicked\": false,
+        \"stickied\": false, \"author\": \"Massman-\", \"media\": null, \"score\":
+        139, \"approved_by\": null, \"over_18\": false, \"hidden\": false, \"thumbnail\":
+        \"\", \"subreddit_id\": \"t5_2qh16\", \"edited\": false, \"link_flair_css_class\":
+        null, \"author_flair_css_class\": null, \"downs\": 72, \"saved\": false, \"is_self\":
+        false, \"permalink\": \"/r/technology/comments/1y7gfk/polish_overclocker_sets_new_operating_frequency/\",
+        \"name\": \"t3_1y7gfk\", \"created\": 1392722077.0, \"url\": \"http://hwbot.org/newsflash/2450_new_edo_ram_frequency_record___ludek111_%28poland%29_hits_140_mhz_memory_frequency\",
+        \"author_flair_text\": null, \"title\": \"Polish overclocker sets new operating
+        frequency record for 20 year old EDO RAM (140 MHz)\", \"created_utc\": 1392693277.0,
+        \"ups\": 211, \"num_comments\": 15, \"visited\": false, \"num_reports\": null,
+        \"distinguished\": null}}, {\"kind\": \"t3\", \"data\": {\"domain\": \"theverge.com\",
+        \"banned_by\": null, \"media_embed\": {}, \"subreddit\": \"technology\", \"selftext_html\":
+        null, \"selftext\": \"\", \"likes\": null, \"secure_media\": null, \"link_flair_text\":
+        null, \"id\": \"1y7kir\", \"secure_media_embed\": {}, \"clicked\": false,
+        \"stickied\": false, \"author\": \"KAPT_Kipper\", \"media\": null, \"score\":
+        90, \"approved_by\": null, \"over_18\": false, \"hidden\": false, \"thumbnail\":
+        \"\", \"subreddit_id\": \"t5_2qh16\", \"edited\": false, \"link_flair_css_class\":
+        null, \"author_flair_css_class\": null, \"downs\": 102, \"saved\": false,
+        \"is_self\": false, \"permalink\": \"/r/technology/comments/1y7kir/gabe_newell_says_valve_isnt_tracking_your_browser/\",
+        \"name\": \"t3_1y7kir\", \"created\": 1392724420.0, \"url\": \"http://www.theverge.com/2014/2/17/5421054/valve-isnt-tracking-internet--says-gabe-newell\",
+        \"author_flair_text\": null, \"title\": \"Gabe Newell says Valve isn't tracking
+        your browser history\", \"created_utc\": 1392695620.0, \"ups\": 192, \"num_comments\":
+        76, \"visited\": false, \"num_reports\": null, \"distinguished\": null}}],
+        \"after\": \"t3_1y7kir\", \"before\": null}}"
     http_version: 
-  recorded_at: Fri, 31 Jan 2014 18:50:36 GMT
+  recorded_at: Tue, 18 Feb 2014 22:13:40 GMT
 recorded_with: VCR 2.8.0

@@ -1,37 +1,19 @@
 require 'spec_helper'
 
 describe 'RedditReader' do
-  let(:url) { 'http://reddit.com/.json' }
+  let(:url) { 'http://www.reddit.com/r/technology/.json' }
   let(:reddit_reader) { RedditReader.new(url) }
-  let(:titles) {
-    [
-      "TIL Mike Tyson offered",
-      "advisory",
-      "Was looking in my moms college yearbook",
-      "Baby Olinguito",
-      "Captain Underpants movie announced",
-      "Cubone of War",
-      "I'm well past college but with all",
-      "Hi Reddit! Barnaby Phillips here,",
-      "Vila Franca's Islet,",
-      "Baltimore local helps",
-      "Well, that's a bad day",
-      "Golden Retriever guards",
-      "Shipwrecked man makes land",
-      "Footage released of Guardian editors",
-      "What is the most complicated",
-      "Why is it that after a long night",
-      "The upside to being let go by Nokia",
-      "Hemp",
-      "South Park's 201",
-      "If enamel can't be regenerated",
-      "Picard and Gandalf",
-      "A long as America is enamored with NZ",
-      "Never read sci-fi until this morning,",
-      "Today is the final day of the Combined",
-      "I attached my camera"
-    ]
-  }
+  let(:titles) do
+    File.read('spec/fixtures/titles.txt').each_line.map do |line|
+      line.strip
+    end
+  end
+  let(:titles_for_matching) do
+    File.read('spec/fixtures/short_titles.txt').each_line.map do |line|
+      line.strip
+    end
+  end
+  let(:over_18_title) { "This syringe filled with high-tech mini sponges can seal a bullet wound in seconds" }
 
   describe '::new' do
     it 'takes a url on initialization' do
@@ -40,13 +22,20 @@ describe 'RedditReader' do
   end
 
   describe '#read!' do
-    it 'creates Post instances for each post' do
+    before do
       use_vcr('reddit_posts') do
         reddit_reader.read!
-        titles.each_with_index do |title, i|
-          expect(reddit_reader.posts[i].title).to match(/#{titles[i]}/)
-        end
+        @post_titles = reddit_reader.posts.map {|p| p.title}
       end
+    end
+    it 'creates Post instances for each post' do
+      titles.each do |title|
+        expect(@post_titles).to include(title)
+      end
+    end
+
+    it 'doesn\'t store posts that contain NSFW material' do
+      expect(@post_titles).to_not include(over_18_title)
     end
   end
 
@@ -62,7 +51,7 @@ describe 'RedditReader' do
       
       reddit_reader.generate_html('generated_html.html')
       file = File.read(File.expand_path('generated_html.html'))
-      titles.each do |title|
+      titles_for_matching.each do |title|
         expect(file).to match(/#{title}/)
       end
     end

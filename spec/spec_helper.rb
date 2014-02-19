@@ -1,4 +1,5 @@
 require_relative '../config/environment'
+require 'yaml'
 Bundler.require(:test)
 
 RSpec.configure do |config|
@@ -16,7 +17,7 @@ VCR.configure do |c|
 end
 
 def use_vcr(cassette_name, &expectation)
-  VCR.use_cassette(cassette_name, record: :new_episodes) do
+  VCR.use_cassette(cassette_name, record: :new_episodes, decode_compressed_response: true) do
     yield
   end
 end
