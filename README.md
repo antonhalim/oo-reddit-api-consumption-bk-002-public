@@ -29,7 +29,7 @@ attribute-value) pairs. A JSON object might look something like this:
 }
 ```
 
-Using the `json` Ruby gem, we get a handfull of very useful methods that will take
+Using the `json` Ruby module, we get a handfull of very useful methods that will take
 a JSON object and convert it into a Ruby hash. So, assuming we have a JSON object
 stored in the variable `data`, we can convert it into a hash like this:
 
@@ -63,13 +63,7 @@ that manages and installs any Ruby gems we need for our project and ensures that
 they are properly included in our environment. If you take a look in `Gemfile`, 
 you can see what gems are being installed.
 
-Some of the installed gems are only used for the purposes of the RSpec test suite, but
-the ones you may want to do a little research on are [json](http://www.ruby-doc.org/stdlib-2.0.0/libdoc/json/rdoc/JSON.html)
-and [rest_client](https://github.com/rest-client/rest-client). They are the two
-gems that will enable us to interact with the Reddit JSON API. The [pry](https://github.com/pry/pry)
-gem is one you may or may not choose to use, but it is an *extremely* useful tool
-for debugging and playing around with your code. If you ever want to see what it does,
-add the line `binding.pry` to your code and see what happens.
+Some of the installed gems are only used for the purposes of the RSpec test suite, but you may want to do a little research on [rest_client](https://github.com/rest-client/rest-client). It is the gem that we will use to request JSON from Reddit. Also, it's worth taking a look at the documentation on the [JSON Module](http://www.ruby-doc.org/stdlib-2.1.0/libdoc/json/rdoc/JSON.html).
 
 ### SFW Reddit
 
@@ -78,12 +72,11 @@ A hash of stories from the Reddit front page can now be retrieved using the foll
 `reddit_hash = JSON.parse(RestClient.get('http://reddit.com/.json'))`
 
 Retrieve the Reddit hash in a `pry` or `irb` session and play with it interactively.
-(If you play around with it in irb, make sure to `require` the `json` and `rest_client`
-gems! Otherwise, you will get errors about JSON and RestClient.) All your code will
+(If you play around with it in irb, make sure to `require 'json'` and `require 'rest_client'`! Otherwise, you will get errors about JSON and RestClient.) All your code will
 be placed in two Ruby classes, but playing with the hash in irb is a useful tool when
 getting to know a complex data structure.
 
-You will have two classes, `RedditReader` and `Post`. The `RedditReader` class should be responsible for parsing the JSON response from Reddit, and the `Post` class will contain the data for each post. Follow along with the specs, and you will be guided to write the necessary methods.
+You will have two classes, `RedditReader` and `Post`. The `RedditReader` class should be responsible for parsing the JSON response from Reddit, and the `Post` class will contain the data for each post. Follow along with the specs, and you will be guided to write the necessary methods. (Note: Our `RedditReader` class will act as a factory that creates instances of the `Post` class from the JSON it gets from Reddit.)
 
 We want to generate an HTML page that excludes all posts that are NSFW (not safe for work).
 This is indicated by the `over_18` field.
