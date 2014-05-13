@@ -1,6 +1,6 @@
 ---
-tags: oop, api, json
-languages: ruby
+  tags: oop, api, json
+  languages: ruby
   resources: 2
 ---
 
