@@ -1,6 +1,7 @@
 ---
 tags: oop, api, json
 languages: ruby
+  resources: 2
 ---
 
 # Object Oriented Reddit Reader
@@ -146,3 +147,6 @@ for your string to duplicate the indentation whitespace shown above.
     
 Finally, have your script write the string to a file called "reddit.html". Then, 
 try opening it in your browser!
+## Resources
+* [Ruby Docs](http://www.ruby-doc.org/) - [JavaScript Object Notation (JSON)](http://www.ruby-doc.org/stdlib-2.1.0/libdoc/json/rdoc/JSON.html)
+* [Codecademy](http://www.codecademy.com/) - [Intro to JSON and API](http://www.codecademy.com/courses/twin-acronyms/0/1)
