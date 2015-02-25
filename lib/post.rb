@@ -1,8 +1,5 @@
-require 'pry'
-require 'json'
-
 class Post
-attr_reader :title, :url, :upvotes, :downvotes, :content, :image_url
+attr_accessor :title, :url, :upvotes, :downvotes, :content, :image_url
 
   def initialize(hash)
     @title = hash[:title]
